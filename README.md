@@ -1,157 +1,143 @@
-Maternity Cost & Risk Prediction — Healthcare Payer Strategy Project
-Overview
+# Maternity Episode Cost & Risk Prediction  
+### Healthcare Payer Strategy & Predictive Modeling Project  
 
-Healthcare payers face rising maternity costs driven by high-risk pregnancies, complications, and delivery method variation.
+---
 
-This project simulates a real-world payer analytics engagement using commercial claims data to:
+## Business Problem
+Pregnancy episodes are one of the highest cost drivers for commercial health plans.  
+However, most payers only identify high-risk pregnancies **after costs have already occurred**.
 
-Identify high-cost pregnancy episodes
+This project builds an end-to-end analytics and predictive model to:
 
-Understand cost drivers
+- Identify high-cost pregnancy drivers  
+- Predict which pregnancies will become high-cost  
+- Quantify intervention savings opportunity  
+- Simulate a real payer strategy use-case  
 
-Predict high-risk pregnancies early
+---
 
-Estimate cost-reduction opportunities
+## Dataset
+Commercial maternity claims dataset including:
 
-Recommend payer intervention strategy
+- ~2,000 delivery episodes  
+- Medical claims  
+- Pharmacy claims  
+- Member enrollment  
+- Episode-level cost aggregation  
 
-Goal: Turn raw healthcare claims data into actionable payer strategy and financial impact.
+---
 
-Dataset
+## Tools Used
+- Python  
+- Pandas  
+- Scikit-learn  
+- Seaborn / Matplotlib  
+- Healthcare claims logic  
 
-Commercial maternity claims dataset (de-identified)
+---
 
-~2,000 delivery episodes analyzed
+## Key Insights
 
-Includes:
+### Cost Drivers Identified
+- C-section deliveries significantly higher cost  
+- Gestational diabetes increases episode cost  
+- Length of stay is strongest cost driver  
 
-Medical claims
+High-cost pregnancy definition:  
+**Top 10% of episode cost (> ~$32K)**
 
-Pharmacy claims
+---
 
-Member eligibility
+### High-Cost Risk Differences
+| Group | Avg Cost |
+|------|---------|
+| Normal pregnancies | ~$15.8K |
+| High-cost pregnancies | ~$51.9K |
 
-Diagnosis & procedure codes
+C-section high-cost rate:
+- 23% high cost  
+Vaginal high-cost rate:
+- 6.8% high cost  
 
-Episode-level cost aggregation
+---
 
-All data processed into episode-level pregnancy journeys.
+### Diabetes Impact
+| Group | Avg Cost |
+|------|---------|
+| No diabetes | ~$18.8K |
+| Gestational diabetes | ~$23.6K |
 
-Tools Used
+Diabetes pregnancies:
+- Higher C-section rate  
+- Higher high-cost probability  
+- Higher total spend  
 
-Python
+---
 
-Pandas & NumPy
+## Predictive Model Built
+Goal: Predict which pregnancies become high-cost.
 
-Scikit-learn (Predictive Modeling)
+Model inputs:
+- C-section flag  
+- Diabetes flag  
+- Length of stay  
 
-Matplotlib & Seaborn
+Feature importance:
+1. C-section status → strongest driver  
+2. Diabetes → moderate driver  
+3. Length of stay → major cost amplifier  
 
-Jupyter Notebook
+---
 
-GitHub
+## Risk Stratification
+Population grouped into:
 
-📊 Key Findings
-Delivery Type Drives Major Cost Differences
-Delivery Type	Avg Cost	Median Cost
-Vaginal	$17,409	$14,860
-C-section	$28,614	$24,110
+| Risk Level | Cases |
+|-----------|------|
+| Low | 918 |
+| Medium | 355 |
+| High | 624 |
 
-C-sections cost ~64% more on average than vaginal deliveries
+Average cost by risk tier:
+- Low: ~$14.7K  
+- Medium: ~$18.4K  
+- High: ~$25.2K  
 
-High-Cost Pregnancies Drive Disproportionate Spend
-Category	Avg Cost
-Normal pregnancies	$15,844
-High-cost pregnancies	$51,962
+---
 
-High-cost pregnancies average 3.3× higher spend
+## Savings Opportunity Simulation
 
-Gestational Diabetes Increases Cost & Risk
-Group	Avg Cost
-No diabetes	$18,852
-Diabetes pregnancies	$23,678
+High-risk pregnancies identified early:  
+**624 cases**
 
-Diabetes pregnancies cost ~25% more
+Total high-risk spend:
+**$15.7M**
 
-C-section rate:
+If payer intervenes and reduces cost by 15%:
+**Potential savings: $2.36M**
 
-Non-diabetes: 17%
+---
 
-Diabetes: 26.8%
+## Example Payer Interventions
+- Early diabetes care management  
+- High-risk pregnancy monitoring  
+- Avoidable ER visit reduction  
+- C-section review programs  
+- Care navigation for high-risk members  
 
-Length of Stay = Strongest Cost Driver
-Group	Avg LOS
-Normal cost	2.4 days
-High cost	4.2 days
+---
 
-High-cost pregnancies have ~75% longer hospital stays
+## Why This Project Matters
+This simulates a real healthcare payer analytics use-case:
 
-🤖 Predictive Modeling: High-Cost Pregnancy Risk
+- Episode cost modeling  
+- Risk prediction  
+- Population health strategy  
+- ROI estimation  
+- Executive-level insights  
 
-Built logistic regression model to predict high-cost pregnancies.
+Built to reflect real world payer analytics and healthcare strategy work.
 
-Top predictors:
+---
 
-C-section delivery
-
-Gestational diabetes
-
-Length of stay
-
-Model segments pregnancies into risk groups:
-
-Risk Level	Pregnancies
-Low	918
-Medium	355
-High	624
-Cost by Predicted Risk Group
-Risk Level	Avg Cost
-Low	$14,772
-Medium	$18,416
-High	$25,261
-
-Model successfully stratifies cost risk early.
-
-💰 Payer Savings Simulation
-
-High-risk pregnancies identified: 624
-
-Average cost per high-risk pregnancy: $25,261
-Total high-risk spend: $15.7M
-
-If payer intervenes early (care management + prevention):
-
-Estimated savings: ≈ $2.36M (15% reduction)
-
-🏥 Recommended Payer Strategy
-1. Early Risk Identification
-
-Flag:
-
-Diabetes pregnancies
-
-Prior complications
-
-High predicted cost risk
-
-2. Targeted Intervention
-
-For high-risk pregnancies:
-
-Care management enrollment
-
-Diabetes monitoring
-
-OB coordination
-
-Avoidable C-section reduction
-
-3. Expected Impact
-
-Lower complications
-
-Shorter hospital stays
-
-Reduced C-section utilization
-
-Multi-million dollar savings
+## Project Structure
