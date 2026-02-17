@@ -1,4 +1,4 @@
-# Maternity Episode Cost & Risk Prediction  
+# Maternity Cost & Risk Prediction for Healthcare Payers 
 ### Healthcare Payer Strategy & Predictive Modeling Project  
 
 Healthcare payer analytics project simulating real-world cost reduction strategy using maternity claims data (~2,000 episodes).
@@ -169,6 +169,7 @@ This simulates a real healthcare payer analytics use-case:
 - Health-tech product analytics roles
 - Payer/provider analytics teams
 - Population health & value-based care teams
+
 
 
 
