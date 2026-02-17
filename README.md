@@ -149,18 +149,4 @@ This simulates a real healthcare payer analytics use-case:
 
 Built to reflect real world payer analytics and healthcare strategy work.
 
----
-
-## Project Structure
-episode-care-analytics/
-│
-├── notebooks/
-│ └── maternity-cost-risk-prediction.ipynb
-│
-├── data/
-│ ├── medical claims
-│ ├── pharmacy claims
-│ └── members
-│
-└── README.md
 
