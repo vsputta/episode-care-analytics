@@ -42,18 +42,18 @@ Commercial maternity claims dataset including:
 
 ## Key Insights
 
-### Cost Drivers Identified
-- C-section deliveries significantly higher cost  
-- Gestational diabetes increases episode cost  
-- Length of stay is strongest cost driver
+### Primary Cost Drivers Identified
+- C-section deliveries associated with significantly higher episode cost
+- Gestational diabetes linked to elevated maternal episode spend
+- Length of stay identified as strongest driver of high-cost episodes
 
-### Key Business Impact
+### Key Business Impact for Healthcare Payers
 
-- Identified top 10% pregnancies driving disproportionate costs
-- Built predictive model to flag high-cost risk early
-- High-risk pregnancies account for ~$15.7M in spend
-- Estimated 15% cost reduction opportunity → ~$2.36M savings
-- Demonstrates payer intervention targeting strategy
+- Top 10% of pregnancies drive disproportionate share of total spend
+- Predictive model built to flag high-cost risk early in pregnancy
+- High-risk pregnancies account for ~$15.7M in total episode spend
+- Targeted intervention opportunity: ~15% potential cost reduction (~$2.36M savings)
+- Demonstrates real-world payer strategy: early risk identification + cost containment
 
 
 High-cost pregnancy definition:  
@@ -169,6 +169,7 @@ This simulates a real healthcare payer analytics use-case:
 - Health-tech product analytics roles
 - Payer/provider analytics teams
 - Population health & value-based care teams
+
 
 
 
