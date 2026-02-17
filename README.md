@@ -44,15 +44,13 @@ Commercial maternity claims dataset including:
 - Length of stay is strongest cost driver  
 
 High-cost pregnancy definition:  
+
 **Top 10% of episode cost (> ~$32K)**
 
----
-## Project Dashboard & Outputs
 <img width="1626" height="835" alt="image" src="https://github.com/user-attachments/assets/97b85849-a77a-4278-941c-362d6eadcc08" />
 
-<img width="1451" height="820" alt="image" src="https://github.com/user-attachments/assets/96b8fb68-2a61-41c6-bec4-a566666ea6c0" />
 
-<img width="1165" height="829" alt="image" src="https://github.com/user-attachments/assets/9ac655b0-af8a-42ea-a4fd-8637fb524050" />
+
 
 
 ---
@@ -68,6 +66,7 @@ C-section high-cost rate:
 Vaginal high-cost rate:
 - 6.8% high cost  
 
+<img width="1451" height="820" alt="image" src="https://github.com/user-attachments/assets/96b8fb68-2a61-41c6-bec4-a566666ea6c0" />
 ---
 
 ### Diabetes Impact
@@ -96,6 +95,8 @@ Feature importance:
 2. Diabetes → moderate driver  
 3. Length of stay → major cost amplifier  
 
+<img width="631" height="216" alt="image" src="https://github.com/user-attachments/assets/9ed2fa10-6b1c-42c3-9300-5fbf3534797c" />
+
 ---
 
 ## Risk Stratification
@@ -110,8 +111,9 @@ Population grouped into:
 Average cost by risk tier:
 - Low: ~$14.7K  
 - Medium: ~$18.4K  
-- High: ~$25.2K  
-
+- High: ~$25.2K
+  
+<img width="1165" height="829" alt="image" src="https://github.com/user-attachments/assets/9ac655b0-af8a-42ea-a4fd-8637fb524050" />
 ---
 
 ## Savings Opportunity Simulation
@@ -161,3 +163,4 @@ episode-care-analytics/
 │ └── members
 │
 └── README.md
+
