@@ -47,6 +47,15 @@ High-cost pregnancy definition:
 **Top 10% of episode cost (> ~$32K)**
 
 ---
+## Project Dashboard & Outputs
+<img width="1626" height="835" alt="image" src="https://github.com/user-attachments/assets/97b85849-a77a-4278-941c-362d6eadcc08" />
+
+<img width="1451" height="820" alt="image" src="https://github.com/user-attachments/assets/96b8fb68-2a61-41c6-bec4-a566666ea6c0" />
+
+<img width="1165" height="829" alt="image" src="https://github.com/user-attachments/assets/9ac655b0-af8a-42ea-a4fd-8637fb524050" />
+
+
+---
 
 ### High-Cost Risk Differences
 | Group | Avg Cost |
@@ -141,3 +150,14 @@ Built to reflect real world payer analytics and healthcare strategy work.
 ---
 
 ## Project Structure
+episode-care-analytics/
+│
+├── notebooks/
+│ └── maternity-cost-risk-prediction.ipynb
+│
+├── data/
+│ ├── medical claims
+│ ├── pharmacy claims
+│ └── members
+│
+└── README.md
