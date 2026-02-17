@@ -1,6 +1,10 @@
 # Maternity Episode Cost & Risk Prediction  
 ### Healthcare Payer Strategy & Predictive Modeling Project  
 
+Healthcare payer analytics project simulating real-world cost reduction strategy using maternity claims data (~2,000 episodes).
+Built to mirror analytics work done in payer strategy, consulting, and health-tech product teams.
+
+
 ---
 
 ## Business Problem
@@ -41,7 +45,16 @@ Commercial maternity claims dataset including:
 ### Cost Drivers Identified
 - C-section deliveries significantly higher cost  
 - Gestational diabetes increases episode cost  
-- Length of stay is strongest cost driver  
+- Length of stay is strongest cost driver
+
+## Key Business Impact
+
+- Identified top 10% pregnancies driving disproportionate costs
+- Built predictive model to flag high-cost risk early
+- High-risk pregnancies account for ~$15.7M in spend
+- Estimated 15% cost reduction opportunity → ~$2.36M savings
+- Demonstrates payer intervention targeting strategy
+
 
 High-cost pregnancy definition:  
 
@@ -97,6 +110,9 @@ Feature importance:
 
 <img width="631" height="216" alt="image" src="https://github.com/user-attachments/assets/9ed2fa10-6b1c-42c3-9300-5fbf3534797c" />
 
+
+Model built to simulate real-world payer risk stratification workflows for early intervention and cost containment.
+
 ---
 
 ## Risk Stratification
@@ -147,6 +163,11 @@ This simulates a real healthcare payer analytics use-case:
 - ROI estimation  
 - Executive-level insights  
 
-Built to reflect real world payer analytics and healthcare strategy work.
+## Who this project is relevant for
+
+- Healthcare strategy & consulting roles
+- Health-tech product analytics roles
+- Payer/provider analytics teams
+- Population health & value-based care teams
 
 
