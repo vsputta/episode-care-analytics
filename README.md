@@ -47,7 +47,7 @@ Commercial maternity claims dataset including:
 - Gestational diabetes increases episode cost  
 - Length of stay is strongest cost driver
 
-## Key Business Impact
+### Key Business Impact
 
 - Identified top 10% pregnancies driving disproportionate costs
 - Built predictive model to flag high-cost risk early
@@ -169,5 +169,6 @@ This simulates a real healthcare payer analytics use-case:
 - Health-tech product analytics roles
 - Payer/provider analytics teams
 - Population health & value-based care teams
+
 
 
